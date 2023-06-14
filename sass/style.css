@@ -19,7 +19,7 @@ header {
   padding: 0.2rem;
 }
 
-main .city {
+.city {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,24 +28,20 @@ main .city {
   padding: 0.5rem;
   gap: 1rem;
 }
-
-main .city i {
+.city i {
   font-size: 1.3rem;
 }
 
 .explorer {
   text-align: center;
 }
-
 .explorer h2 {
   margin-top: 2rem;
   font-size: 2rem;
 }
-
 .explorer p {
   font-size: 1rem;
 }
-
 .explorer button {
   color: #f3f3f3;
   font-weight: 300;
@@ -58,7 +54,6 @@ main .city i {
   transition: transform 200ms;
   margin-top: 1rem;
 }
-
 .explorer button:hover {
   transform: scale(1.02);
   opacity: 0.9;
