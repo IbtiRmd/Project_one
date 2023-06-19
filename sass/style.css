@@ -11,6 +11,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+main {
+  padding: 0 1rem;
+}
+
 header {
   position: relative;
   font-family: "shrikhand", cursive;
@@ -57,4 +61,75 @@ header {
 .explorer button:hover {
   transform: scale(1.02);
   opacity: 0.9;
+}
+
+/*.fonctionnement
+{
+    & ol{
+
+
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    @media (max-width:1024px) {
+
+    }
+     }
+
+    & li
+    {
+        background-color: #F6F6F6;
+        padding: 1rem 2rem;
+        border: 1px solid red;
+        flex-grow: 1;
+        border-radius: 1rem;
+        box-shadow: 0 0 0.5rem rgb(0 0  0/25%);
+    }
+
+
+}*/
+.foncionnement {
+  counter-reset: steps;
+}
+.foncionnement ol {
+  display: flex;
+  gap: 2rem;
+}
+@media (max-width: 1021px) {
+  .foncionnement ol {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.foncionnement li {
+  position: relative;
+  list-style-type: none;
+  background-color: #F6F6F6;
+  padding: 1.5rem 2rem;
+  flex-grow: 1;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  transition: transform 200ms;
+}
+.foncionnement li::before {
+  content: counter(steps);
+  counter-increment: steps;
+  color: #F6F6F6;
+  background-color: #9356DC;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 1rem;
+  left: -1rem;
+}
+.foncionnement li:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+.foncionnement i.fas {
+  color: #7E7E7E;
+  margin-right: 1rem;
 }/*# sourceMappingURL=style.css.map */
