@@ -35,7 +35,9 @@
 
 .foncionnement
 {
+    background-color: white;
     counter-reset: steps;
+    margin-bottom: 2rem;
     & ol 
     {
         display: flex;

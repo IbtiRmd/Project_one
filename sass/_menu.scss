@@ -1,0 +1,55 @@
+.menu
+{
+    h2 
+    {
+        margin-bottom: 2rem;
+    }
+    
+    .menu__card
+    {
+
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+        @media (max-width:800px) 
+        {
+            grid-template-columns: repeat(1,1fr);
+            
+        }
+        
+    }
+
+    .card
+    {
+        
+        /*height: 4rem;
+        flex-grow: 1;
+        /*gggg
+        min-width: 30rem;*/
+
+         & .card_img
+         {
+            /*background-image: url("../images/restaurants/menu-1.jpg");*/
+            height: 15rem;
+            border-radius: 1rem;
+            background-size: cover;
+            
+         }
+
+         & .card_img_1{
+            background-image: url("../images/restaurants/menu-1.jpg");
+         }
+
+         & .card_img_2{
+            background-image: url("../images/restaurants/menu-2.jpg");
+         }
+
+         & .card_img_3{
+            background-image: url("../images/restaurants/menu-3.jpg");
+         }
+
+         & .card_img_4{
+            background-image: url("../images/restaurants/menu-4.jpg");
+         }
+    }
+}

@@ -9,10 +9,16 @@ body {
   /*background-color:pink;*/
   margin: 0;
   font-family: "Roboto", sans-serif;
+  background-color: #F6F6F6;
 }
 
 main {
   padding: 0 1rem;
+}
+
+h2 {
+  padding: 2rem 0;
+  margin: 0;
 }
 
 header {
@@ -89,7 +95,9 @@ header {
 
 }*/
 .foncionnement {
+  background-color: white;
   counter-reset: steps;
+  margin-bottom: 2rem;
 }
 .foncionnement ol {
   display: flex;
@@ -132,4 +140,42 @@ header {
 .foncionnement i.fas {
   color: #7E7E7E;
   margin-right: 1rem;
+}
+
+.menu h2 {
+  margin-bottom: 2rem;
+}
+.menu .menu__card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+@media (max-width: 800px) {
+  .menu .menu__card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.menu .card {
+  /*height: 4rem;
+  flex-grow: 1;
+  /*gggg
+  min-width: 30rem;*/
+}
+.menu .card .card_img {
+  /*background-image: url("../images/restaurants/menu-1.jpg");*/
+  height: 15rem;
+  border-radius: 1rem;
+  background-size: cover;
+}
+.menu .card .card_img_1 {
+  background-image: url("../images/restaurants/menu-1.jpg");
+}
+.menu .card .card_img_2 {
+  background-image: url("../images/restaurants/menu-2.jpg");
+}
+.menu .card .card_img_3 {
+  background-image: url("../images/restaurants/menu-3.jpg");
+}
+.menu .card .card_img_4 {
+  background-image: url("../images/restaurants/menu-4.jpg");
 }/*# sourceMappingURL=style.css.map */
