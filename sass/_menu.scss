@@ -41,6 +41,7 @@
 
     .card
     {
+
         
         /*height: 4rem;
         flex-grow: 1;
@@ -77,24 +78,44 @@
          {
             background-color: #ffffff;
             position: relative;
+            border-radius: 0 0 1rem 1rem ;
             h3
             {
                 /*margin: 0.5rem;*/
                 padding-top: 1.3rem;
+                padding-left: 0.9rem;
                 
             }
 
             p
             {
-                padding: 0.3rem;
-                
+                padding-top: 0.3rem;
+                padding-bottom: 1rem;
+                padding-left: 0.9rem;
             }
-            i{
+            i
+            {
                 font-size: 2rem;
                 position: absolute;
                 right: 1rem;
                 top: 50%;
                 transform: translateY(-50%);
+            }
+
+            .fas
+            {
+                color: transparent;
+                background-image:linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%) ;
+                background-clip: text;
+                -webkit-background-clip: text;
+                opacity: 0;
+                transition: all 200ms ease-in-out;
+                
+            }
+            &:hover .fas
+            {
+                opacity: 1;
+                
             }
          }
     }
