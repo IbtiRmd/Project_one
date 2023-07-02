@@ -160,30 +160,7 @@ body
     
             
 
-        button
-        {
-            color: #f3f3f3;
-            font-weight: 300;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.5rem;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 2rem;
-            box-shadow: 2px 1px 7px -3px #000000;
-            background-image: linear-gradient(to top, rgba(147,86,220,0.9), rgba(255,121,218,0.9));
-            transition: transform 200ms;
-            margin-top: 1rem;
-            justify-content: center;
-            margin-bottom: 2rem;
-        }
-
-        button:hover
-        {
-            transform: scale(1.02);
-            opacity: 0.9;
-        }
-
+        
         /*h5
         {
             font-family: Roboto;
@@ -218,6 +195,39 @@ body
             text-align: left;
 
         }*/
+
+
+        .command
+        {
+            height: 20vh;
+            display: grid;
+            place-items: center;
+        }
+
+        button
+        {
+            color: #f3f3f3;
+            font-weight: 300;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 2rem;
+            box-shadow: 2px 1px 7px -3px #000000;
+            background-image: linear-gradient(to top, rgba(147,86,220,0.9), rgba(255,121,218,0.9));
+            transition: transform 200ms;
+            margin-top: 1rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        button:hover
+        {
+            transform: scale(1.02);
+            opacity: 0.9;
+        }
+
 
 
 }

@@ -416,6 +416,11 @@ body {
     padding: 0 6rem;
   }
 }
+.page-main .command {
+  height: 20vh;
+  display: grid;
+  place-items: center;
+}
 .page-main button {
   color: #f3f3f3;
   font-weight: 300;
