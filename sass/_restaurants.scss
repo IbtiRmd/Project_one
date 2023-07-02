@@ -1,0 +1,233 @@
+
+body
+{
+    background-color: #fff;
+}
+.banner img
+{
+    display: block;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    object-position: center bottom;
+    
+}
+
+
+
+
+
+.container
+{
+
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+.menus-grid
+{
+    /*background-color: yellow;*/
+    display: grid;
+    grid-template-columns:1fr;
+    gap:1rem;
+    
+    /*&>*
+    {
+        
+    }*/
+
+    h3 
+            {
+                text-transform: uppercase;
+                font-weight: 300;
+                position: relative;
+
+                &::after
+                {
+                    content: "";
+                    height: 0.25rem;
+                    width: 2.50rem;
+                    background-color: #99E2D0;
+                    position: absolute;
+                    top: 1.5rem;
+                    left: 0;
+                }
+            }
+}
+
+.menus-category
+{
+    
+    background-color:white;
+    border-radius: 1rem;
+    box-shadow: 2px 1px 7px -3px #c6c4c4;
+    overflow: hidden;
+    white-space: nowrap ;
+    text-overflow: ellipsis;
+    
+    .menu-item
+        {
+
+            
+
+            
+            display: flex;
+            overflow: hidden;
+            white-space: nowrap ;
+            text-overflow: ellipsis;
+            
+            /*background-color: #f3f3f3;*/
+            
+            .price
+            {
+                margin-left: auto;
+                font-weight: 900;
+                padding: 1rem;
+                display:flex;
+                align-items: flex-end;                
+            }
+            .menu-description
+            {
+                padding: 1rem;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+
+                h4,p 
+                {
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+            }
+
+            
+
+            .menu-check
+            {
+                display: grid;
+                place-items: center;
+                background-color: #99E2D0;
+                margin-right: -3rem;
+                flex-shrink: 0;
+                width:3rem;
+                border-radius: 0 1rem 1rem 0;
+                transition: margin-right 0.5s;
+
+                i 
+                {
+                    display: grid;
+                    place-items: center;
+                    width: 1.5rem;
+                    aspect-ratio: 1;
+                    border-radius: 50%;
+                    background: #F6F6F6;
+                    color:#99E2D0 ;
+                }
+
+            }
+
+
+            &:hover .menu-check
+            {
+                margin-right: 0;
+            }
+        }
+
+    
+}
+
+
+
+
+
+.page-main
+
+{
+
+    background-color:#F6F6F6;
+    /*text-align: center;*/
+    margin-top: -2rem;
+    border-radius: 2rem 2rem 0 0;
+    z-index: 1;
+    @media (min-width:1024px) {
+        padding: 0 6rem;
+    }
+    /*media query
+    padding: 0 5rem;*/
+    position: relative;
+    
+            
+
+        button
+        {
+            color: #f3f3f3;
+            font-weight: 300;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 2rem;
+            box-shadow: 2px 1px 7px -3px #000000;
+            background-image: linear-gradient(to top, rgba(147,86,220,0.9), rgba(255,121,218,0.9));
+            transition: transform 200ms;
+            margin-top: 1rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        button:hover
+        {
+            transform: scale(1.02);
+            opacity: 0.9;
+        }
+
+        /*h5
+        {
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            
+
+        }*/
+
+        /*h3
+        {
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;
+            
+            
+        }
+
+        p
+        {
+            font-family: Roboto;
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: left;
+
+        }*/
+
+
+}
+
+
+
+ 
+
+
+
+
+
+ 
