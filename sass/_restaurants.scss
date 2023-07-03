@@ -1,4 +1,15 @@
 
+@keyframes appear {
+    0%{
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 body
 {
     background-color: #fff;
@@ -13,6 +24,41 @@ body
     
 }
 
+
+header::before
+        {
+            /*display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            -webkit-font-smoothing:antialiased;
+            /*content: "f060";*/
+        }
+
+.icon-head
+{
+    display:block;
+
+}        
+
+.icon-head h1{
+    text-align: center;
+    font-family: Shrikhand,"cursive";
+}
+
+.icon-head i{
+    left: 2rem;
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #000;
+}
 
 
 
@@ -65,6 +111,11 @@ body
     overflow: hidden;
     white-space: nowrap ;
     text-overflow: ellipsis;
+    animation: appear 0.5s ;
+
+
+
+    
     
     .menu-item
         {
@@ -228,6 +279,8 @@ body
             opacity: 0.9;
         }
 
+
+        
 
 
 }
