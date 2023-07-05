@@ -10,7 +10,34 @@ footer
         padding: 1rem 0;
     }
     p{
-        padding: 0.2rem
+        padding: 0.4rem
         
     }
+
+
+    
+}
+
+
+@media (min-width:1024px) {
+
+
+    footer{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    footer h2 
+    {
+        order: 2;
+        padding-left:2rem ;
+    }
+
+    
+    
+
+    
+    
 }
