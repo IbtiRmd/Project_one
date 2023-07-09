@@ -1,12 +1,15 @@
 .explorer
 {
+    background-color: #F6F6F6;
     text-align: center;
+    height: 260px;
 
 
 & h2
 {
-    margin-top: 2rem;
+    /*margin-top: 1rem;*/
     font-size: 2rem;
+    
 }
 
 & p
