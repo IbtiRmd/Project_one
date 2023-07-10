@@ -184,10 +184,10 @@ header {
 .foncionnement li:hover {
   transform: scale(1.02);
   opacity: 0.9;
-  background-color: pink;
+  background-color: rgb(227, 224, 255);
 }
 .foncionnement i.fas {
-  color: #7E7E7E;
+  color: #773fde;
   margin-right: 1rem;
 }
 
@@ -370,6 +370,7 @@ header::before {
 .container {
   max-width: 1100px;
   margin: auto;
+  padding: 1rem;
 }
 
 .card_second {
@@ -433,7 +434,44 @@ header::before {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  animation: appear 0.5s;
+  animation: appear 0.25s;
+  animation-fill-mode: both;
+}
+.menus-category:nth-child(1) {
+  animation-delay: 90ms;
+}
+.menus-category:nth-child(2) {
+  animation-delay: 180ms;
+}
+.menus-category:nth-child(3) {
+  animation-delay: 270ms;
+}
+.menus-category:nth-child(4) {
+  animation-delay: 360ms;
+}
+.menus-category:nth-child(5) {
+  animation-delay: 450ms;
+}
+.menus-category:nth-child(6) {
+  animation-delay: 540ms;
+}
+.menus-category:nth-child(7) {
+  animation-delay: 630ms;
+}
+.menus-category:nth-child(8) {
+  animation-delay: 720ms;
+}
+.menus-category:nth-child(9) {
+  animation-delay: 810ms;
+}
+.menus-category:nth-child(10) {
+  animation-delay: 900ms;
+}
+.menus-category:nth-child(11) {
+  animation-delay: 990ms;
+}
+.menus-category:nth-child(12) {
+  animation-delay: 1080ms;
 }
 .menus-category .menu-item {
   display: flex;
