@@ -307,7 +307,7 @@ header {
   display: inline-block;
   opacity: 1;
   background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  /*background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
@@ -538,7 +538,7 @@ header::before {
   display: grid;
   place-items: center;
   width: 1.5rem;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   border-radius: 50%;
   background: #F6F6F6;
   color: #99E2D0;
@@ -619,4 +619,7 @@ header::before {
 .page-main button:hover {
   transform: scale(1.02);
   opacity: 0.9;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");*//*# sourceMappingURL=style.css.map */
