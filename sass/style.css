@@ -147,6 +147,11 @@ header {
   margin-bottom: 2rem;
   padding: 2rem 1rem;
 }
+@media (min-width: 1024px) {
+  .foncionnement {
+    padding: 0 6rem;
+  }
+}
 .foncionnement ol {
   display: flex;
   gap: 2rem;
@@ -191,6 +196,17 @@ header {
   margin-right: 1rem;
 }
 
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .menu {
   background-color: #F6F6F6;
   /*margin-bottom: 2rem;*/
@@ -277,16 +293,24 @@ header {
   top: 50%;
   transform: translateY(-50%);
 }
-.menu .card .card_content .fas {
-  color: transparent;
-  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  opacity: 0;
-  transition: all 200ms ease-in-out;
+.menu .card .card_content i {
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
 }
-.menu .card .card_content:hover .fas {
+.menu .card .card_content .far {
+  cursor: pointer;
+}
+.menu .card .card_content .far:hover {
+  animation: fill 0.3s ease-in-out;
+  display: inline-block;
   opacity: 1;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 footer {
@@ -390,16 +414,18 @@ header::before {
   top: 50%;
   transform: translateY(-50%);
 }
-.card_second .fas {
-  color: transparent;
-  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  opacity: 0;
-  transition: all 200ms ease-in-out;
+.card_second .far {
+  cursor: pointer;
 }
-.card_second:hover .fas {
+.card_second .far:hover {
+  animation: fill 0.3s ease-in-out;
+  display: inline-block;
   opacity: 1;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 .menus-grid {
