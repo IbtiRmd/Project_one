@@ -1,5 +1,5 @@
 
-$ile: 0;
+
 
 @keyframes appear {
     0%{
@@ -172,7 +172,7 @@ header::before
     animation: appear 0.25s  ;
     animation-fill-mode: both;
     
-    @for $i from 1 through 12
+    @for $i from 1 through 13
     {
         &:nth-child(#{$i})
         {
