@@ -146,6 +146,7 @@ header {
   border-radius: 1rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
   transition: transform 200ms;
+  right: 1rem;
 }
 .foncionnement li::before {
   content: counter(steps);
@@ -186,6 +187,52 @@ header {
   background-color: #F6F6F6;
   /*margin-bottom: 2rem;*/
   padding: 0 1rem;
+  /*.far
+         {
+
+             cursor: pointer;
+             position: absolute;
+             right: 20px;
+             font-weight: 400;
+             bottom: 20px;
+             font-size: 2rem;
+
+
+
+
+             &:hover {
+                 animation: fill 0.3s ease-in-out;
+                 display: block;
+                 opacity: 1;
+                 background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                 background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                 -webkit-background-clip: text;
+                 -webkit-text-fill-color:transparent;
+                 font-weight: bold;
+
+             }
+
+
+
+
+
+
+
+
+
+             /*&:active{
+
+                 background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+
+             }
+
+
+
+
+
+
+
+         }*/
 }
 @media (min-width: 1024px) {
   .menu {
@@ -218,8 +265,13 @@ header {
   color: #008766;
   display: grid;
   place-items: center;
-  right: 1rem;
+  left: 256px;
   top: 1rem;
+}
+@media (min-width: 1024px) {
+  .menu .menu__card .new::before {
+    left: 340px;
+  }
 }
 .menu .card {
   /*height: 4rem;
@@ -269,23 +321,73 @@ header {
   transform: translateY(-50%);
 }
 .menu .card .card_content i {
-  font-size: 2rem;
   position: absolute;
   right: 1rem;
   top: 50%;
 }
-.menu .card .card_content .far {
-  cursor: pointer;
+.menu .hello {
+  position: relative;
 }
-.menu .card .card_content .far:hover {
+.menu .far {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  font-weight: 400;
+  bottom: 40px;
+  font-size: 2rem;
+}
+.menu #mycheck:checked + #btn .far {
   animation: fill 0.3s ease-in-out;
-  display: inline-block;
+  display: block;
   opacity: 1;
   background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  /*background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);*/
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+}
+.menu #mycheck {
+  visibility: hidden;
+}
+.menu #mychecks:checked + #btn .far {
+  animation: fill 0.3s ease-in-out;
+  display: block;
+  opacity: 1;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+.menu #mychecks {
+  visibility: hidden;
+}
+.menu #mychecke:checked + #btn .far {
+  animation: fill 0.3s ease-in-out;
+  display: block;
+  opacity: 1;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+.menu #mychecke {
+  visibility: hidden;
+}
+.menu #mycheckz:checked + #btn .far {
+  animation: fill 0.3s ease-in-out;
+  display: block;
+  opacity: 1;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #008766;
+  font-weight: bold;
+}
+.menu #mycheckz {
+  visibility: hidden;
 }
 
 footer {

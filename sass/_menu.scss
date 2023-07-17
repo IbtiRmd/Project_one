@@ -36,6 +36,7 @@
     .menu__card
     {
 
+        
         padding: 1rem 0;
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -60,8 +61,12 @@
             color: #008766;
             display: grid;
             place-items: center;
-            right: 1rem;
+            left: 256px;
             top: 1rem;
+
+            @media (min-width:1024px) {
+                left: 340px;
+            }
 
         }
         
@@ -133,7 +138,7 @@
 
             i
             {
-                font-size: 2rem;
+                
                 position: absolute;
                 right: 1rem;
                 top: 50%;
@@ -141,21 +146,180 @@
             }
 
 
-            .far
+            
+
+
+          
+            
+         }
+    }
+
+    .hello
+    {
+        position: relative;
+    }
+
+     /*.far
             {
-                
+               
                 cursor: pointer;
+                position: absolute;
+                right: 20px;
+                font-weight: 400;
+                bottom: 20px;
+                font-size: 2rem;
+
+                
+
+                
                 &:hover {
                     animation: fill 0.3s ease-in-out;
-                    display: inline-block;
+                    display: block;
                     opacity: 1;
                     background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-                    /*background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);*/
+                    background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color:transparent;
                     font-weight: bold;
+                    
                 }
+
+
+
+
+                
+
+                
+            
+
+                /*&:active{
+                    
+                    background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                    
+                }
+
+                
+
+                
+
+
+                
+            }*/
+
+            
+            .far
+            {
+               
+                cursor: pointer;
+                position: absolute;
+                right: 20px;
+                font-weight: 400;
+                bottom: 40px;
+                font-size: 2rem;
+
+            
+
+
+
+
+                
             }
-         }
-    }
+
+            
+
+            #mycheck:checked + #btn .far{
+                animation: fill 0.3s ease-in-out;
+                display: block;
+                opacity: 1;
+                background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color :transparent;
+                
+                font-weight: bold;
+                
+                
+            }
+
+
+            #mycheck
+            {
+
+                visibility: hidden
+            }
+
+
+            #mychecks:checked + #btn .far{
+                animation: fill 0.3s ease-in-out;
+                display: block;
+                opacity: 1;
+                background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color :transparent;
+                
+                font-weight: bold;
+                
+                
+            }
+
+
+            #mychecks
+            {
+
+                visibility: hidden
+            }
+
+
+            #mychecke:checked + #btn .far{
+                animation: fill 0.3s ease-in-out;
+                display: block;
+                opacity: 1;
+                background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color :transparent;
+                
+                font-weight: bold;
+                
+                
+            }
+
+
+            #mychecke
+            {
+
+                visibility: hidden
+            }
+
+            #mycheckz:checked + #btn .far{
+                animation: fill 0.3s ease-in-out;
+                display: block;
+                opacity: 1;
+                background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color :transparent;
+                color: #008766;
+                font-weight: bold;
+                
+                
+            }
+
+
+            #mycheckz
+            {
+
+                visibility: hidden
+            }
+
+
+
+
+
+
+
+
+            
+              
 }
