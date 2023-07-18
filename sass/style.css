@@ -335,7 +335,7 @@ header {
   bottom: 40px;
   font-size: 2rem;
 }
-.menu #mycheck:checked + #btn .far {
+.menu #mycheck:checked + #btn1 .far {
   animation: fill 0.3s ease-in-out;
   display: block;
   opacity: 1;
@@ -348,7 +348,7 @@ header {
 .menu #mycheck {
   visibility: hidden;
 }
-.menu #mychecks:checked + #btn .far {
+.menu #mychecks:checked + #btn2 .far {
   animation: fill 0.3s ease-in-out;
   display: block;
   opacity: 1;
@@ -361,7 +361,7 @@ header {
 .menu #mychecks {
   visibility: hidden;
 }
-.menu #mychecke:checked + #btn .far {
+.menu #mychecke:checked + #btn3 .far {
   animation: fill 0.3s ease-in-out;
   display: block;
   opacity: 1;
@@ -374,7 +374,7 @@ header {
 .menu #mychecke {
   visibility: hidden;
 }
-.menu #mycheckz:checked + #btn .far {
+.menu #mycheckz:checked + #btn4 .far {
   animation: fill 0.3s ease-in-out;
   display: block;
   opacity: 1;
@@ -504,7 +504,7 @@ header::before {
   top: 50%;
   transform: translateY(-50%);
 }
-.card_second #mycheckp:checked + #btn .far {
+.card_second #mycheckp:checked + #btn5 .far {
   animation: fill 0.3s ease-in-out;
   display: block;
   opacity: 1;

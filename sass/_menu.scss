@@ -231,7 +231,7 @@
 
             
 
-            #mycheck:checked + #btn .far{
+            #mycheck:checked + #btn1 .far{
                 animation: fill 0.3s ease-in-out;
                 display: block;
                 opacity: 1;
@@ -253,7 +253,7 @@
             }
 
 
-            #mychecks:checked + #btn .far{
+            #mychecks:checked + #btn2 .far{
                 animation: fill 0.3s ease-in-out;
                 display: block;
                 opacity: 1;
@@ -275,7 +275,7 @@
             }
 
 
-            #mychecke:checked + #btn .far{
+            #mychecke:checked + #btn3 .far{
                 animation: fill 0.3s ease-in-out;
                 display: block;
                 opacity: 1;
@@ -296,7 +296,7 @@
                 visibility: hidden
             }
 
-            #mycheckz:checked + #btn .far{
+            #mycheckz:checked + #btn4 .far{
                 animation: fill 0.3s ease-in-out;
                 display: block;
                 opacity: 1;
