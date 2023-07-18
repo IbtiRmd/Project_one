@@ -245,33 +245,32 @@ header {
 .menu .menu__card {
   padding: 1rem 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /*grid-template-columns: repeat(2,1fr);*/
   gap: 2rem 4rem;
-}
-@media (max-width: 800px) {
-  .menu .menu__card {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-.menu .menu__card .new {
-  position: relative;
-}
-.menu .menu__card .new::before {
-  content: "Nouveau";
-  position: absolute;
-  height: 2rem;
-  width: 5rem;
-  background-color: #99E2D0;
-  color: #008766;
-  display: grid;
-  place-items: center;
-  left: 256px;
-  top: 1rem;
+  /*@media (max-width:800px) 
+  {
+      grid-template-columns: repeat(1,1fr);
+
+  }*/
+  grid-template-columns: repeat(1, 1fr);
 }
 @media (min-width: 1024px) {
-  .menu .menu__card .new::before {
-    left: 340px;
+  .menu .menu__card {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
+.menu .menu__card .nouv {
+  width: 5rem;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  padding: 6px 0;
+  border-radius: 2px;
+  background-color: #99E2D0;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #008766;
 }
 .menu .card {
   /*height: 4rem;
@@ -479,6 +478,21 @@ header::before {
   justify-content: center;
   right: 2rem;
   position: relative;
+  /*.far
+  {
+
+      cursor: pointer;
+      &:hover {
+          animation: fill 0.3s ease-in-out;
+          display: inline-block;
+          opacity: 1;
+          background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+          background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color:transparent;
+          font-weight: bold;
+      }
+  }*/
 }
 .card_second h2 {
   font-family: "shrikhand", cursive;
@@ -487,22 +501,21 @@ header::before {
   font-size: 2rem;
   position: absolute;
   /*right: 1rem;*/
-  margin-left: 20rem;
   top: 50%;
   transform: translateY(-50%);
 }
-.card_second .far {
-  cursor: pointer;
-}
-.card_second .far:hover {
+.card_second #mycheckp:checked + #btn .far {
   animation: fill 0.3s ease-in-out;
-  display: inline-block;
+  display: block;
   opacity: 1;
   background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+}
+.card_second #mycheckp {
+  visibility: hidden;
 }
 
 .menus-grid {

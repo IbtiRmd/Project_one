@@ -99,12 +99,12 @@ header::before
                 font-size: 2rem;
                 position: absolute;
                 /*right: 1rem;*/
-                margin-left: 20rem;
+                
                 top: 50%;
                 transform: translateY(-50%);
             }
 
-            .far
+            /*.far
             {
                 
                 cursor: pointer;
@@ -118,7 +118,45 @@ header::before
                     -webkit-text-fill-color:transparent;
                     font-weight: bold;
                 }
+            }*/
+
+            .far
+            {
+               
+                
+               
+                
+                
+
+            
+
+
+
+
+                
             }
+
+            #mycheckp:checked + #btn .far{
+                animation: fill 0.3s ease-in-out;
+                display: block;
+                opacity: 1;
+                background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color :transparent;
+                
+                font-weight: bold;
+                
+                
+            }
+
+
+            #mycheckp
+            {
+
+                visibility: hidden
+            }
+
 }
 
 
